@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Theme from '../components/Theme'
 import ms from 'ms'
-import {promises as fsPromises} from 'fs'
+import { promises as fsPromises } from 'fs'
 
 export default function Home ({ postList }) {
   return (

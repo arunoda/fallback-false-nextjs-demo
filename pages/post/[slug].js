@@ -27,17 +27,8 @@ export default function Post ({ post }) {
 }
 
 export async function getStaticPaths () {
-  const markdownFiles = await fsPromises.readdir('data')
-
-  const paths = markdownFiles.map(filename => {
-    const slug = filename.replace(/.md$/, '')
-    return {
-      params: { slug }
-    }
-  })
-
   return {
-    paths,
+    paths: [],
     fallback: false
   }
 }
